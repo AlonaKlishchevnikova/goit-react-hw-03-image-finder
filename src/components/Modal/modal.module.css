@@ -1,0 +1,32 @@
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1200;
+}
+
+.Modal {
+    padding: 20px;
+    background-color: azure;
+    position: absolute;
+max-width: calc(100vw - 48px);
+max-height: calc(100vh - 12px);
+
+transform: translate(-50% -50%);
+}
+.close{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}

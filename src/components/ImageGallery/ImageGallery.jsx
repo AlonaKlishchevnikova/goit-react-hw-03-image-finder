@@ -19,7 +19,7 @@ const ImageGallery = ({ images,showImage}) => (
   </section>
 );
 
-ImageGallery.prototypes = {
+ImageGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,

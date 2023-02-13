@@ -1,4 +1,5 @@
 import styles from "./fullImage.module.css"
+import PropTypes from 'prop-types';
 const FullImage = ({ largeImageURL }) => {
     return (
         <div>
@@ -7,3 +8,6 @@ const FullImage = ({ largeImageURL }) => {
  )   
 }
 export default FullImage;
+FullImage.propTypes = {
+      largeImageURL:PropTypes.string.isRequired,
+};
